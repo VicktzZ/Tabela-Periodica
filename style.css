@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    padding: 30px;
+}
+
+.elemento{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+    transition: 0.2s ease-out; 
+}
+
+.elemento:hover{
+    transform: scale(1.25, 1.25);
+    z-index: 2;
+}
+
+section{
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.legenda{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: solid black 1px;
+    height: 300px;
+    padding: 30px;
+    margin: 30px;
+}
+
+/** LEGENDA */
+
+.legenda .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+.legenda p{
+    margin-left: 40px;
+}
+
+#hidrogenio{
+    background-color: greenyellow;
+}
+
+#metais-transicao{
+    background-color: orange;
+}
+
+#nao-metal-poliatômico{
+    background-color: #ebebeb;
+}
+
+#latanideos{
+    background-color: lightgray;
+}
+
+#metais-alcalinos{
+    background-color: yellow;
+}
+
+#pos-transicao{
+    background-color: #4a3aff;
+}
+
+#nao-metal-diatomico{
+    background-color: salmon;
+}
+
+#actinideos{
+    background-color: gray;
+}
+
+#metais-alcalino-terrosos{
+    background-color: #82abf7;
+}
+
+#metaloide{
+    background-color: #eee56d;
+}
+
+#gas-nobre{
+    background-color: crimson;
+}
+
+/** JS CLASSES */
+
+.simbolo{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.data{
+    text-align: left;
+}
+
+.empty-cell{
+    visibility: hidden;
+}
